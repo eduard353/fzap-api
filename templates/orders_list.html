@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Список заказов:</h1>
+
+{% for order in orders %}
+    <div>
+
+        <p>{{ order.id }} {{ order.date }} {{ order.model }} {{ order.year }} {{ order.vin }} {{ order.order_details }}</p>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}
